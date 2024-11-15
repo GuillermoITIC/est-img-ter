@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Imágenes 3D</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Galería 3D</div>
+        <ul class="nav-links">
+            <li><a href="#" onclick="showSection('inicio')">Inicio</a></li>
+            <li><a href="#" onclick="showSection('personal')">Personal</a></li>
+            <li><a href="#" onclick="showSection('infraestructura')">Infraestructura</a></li>
+            <li><a href="#" onclick="showSection('objeto')">Objeto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de Inicio -->
+    <div class="carousel-container" id="inicio">
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="images/lejanoInfra.JPG" alt="Personal Lejano">
+                <p>Esta es la perspectiva desde la parte lejana de la foto personal</p>
+            </div>
+            <div class="carousel-item">
+                <img src="images/personal_cercano.jpg" alt="Personal Cercano">
+                <p>Esta es la perspectiva desde la parte cercana de la foto personal</p>
+            </div>
+            <div class="carousel-item">
+                <img src="images/personal_medio.jpg" alt="Personal Medio">
+                <p>Esta es la perspectiva desde la parte medio de la foto personal</p>
+            </div>
+            <div class="carousel-item">
+                <img src="images/lejanoInfra.JPG" alt="Infraestructura Lejano">
+                <p>Esta es la perspectiva desde la parte lejana de la foto de Infraestructura</p>
+            </div>
+            <div class="carousel-item">
+                <img src="images/CercanoInfra.JPG" alt="Infraestructura Cercano">
+                <p>Esta es la perspectiva desde la parte cercana de la foto de Infraestructura</p>
+            </div>
+            <div class="carousel-item">
+                <img src="images/medioInfra.JPG" alt="Infraestructura Medio">
+                <p>Esta es la perspectiva desde la parte media de la foto de Infraestructura</p>
+            </div>
+            <div class="carousel-item">
+                <img src="images/objeto_lejano.jpg" alt="Objeto Lejano">
+                <p>Esta es la perspectiva desde la parte lejana de la foto de un objeto</p>
+            </div>
+            <div class="carousel-item">
+                <img src="images/objeto_cercano.jpg" alt="Objeto Cercano">
+                <p>Esta es la perspectiva desde la parte cercana de la foto de un objeto</p>
+            </div>
+            <div class="carousel-item">
+                <img src="images/objeto_medio.jpg" alt="Objeto Medio">
+                <p>Esta es la perspectiva desde la parte media de la foto de un objeto</p>
+            </div>
+        </div>
+        <button class="carousel-btn prev">&lt;</button>
+        <button class="carousel-btn next">&gt;</button>
+    </div>
+
+    <!-- Sección de Personal -->
+    <div class="carousel-container" id="personal" style="display: none;">
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="images/IzquierdaPerso.jpg" alt="Personal Lejano">
+                <p>Esta es la perspectiva desde la parte izquierda (Left)</p>
+            </div>
+            <div class="carousel-item">
+                <img src="images/DerechaPerso.jpg" alt="Personal Cercano">
+                <p>Esta es la perspectiva desde la parte derecha (Right)</p>
+            </div>
+         <!--   <div class="carousel-item">
+                <img src="images/personal_medio.jpg" alt="Personal Medio">
+                <p>Profundidad: Media</p>
+            </div> -->
+        </div>
+        <button class="carousel-btn prev">&lt;</button>
+        <button class="carousel-btn next">&gt;</button>
+    </div>
+
+    <!-- Sección de Infraestructura -->
+    <div class="carousel-container" id="infraestructura" style="display: none;">
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="images/IzquierdaInfra.jpg" alt="Infraestructura Lejano">
+                <p>Esta es la perspectiva desde la parte izquierda (Left) </p>
+            </div>
+            <div class="carousel-item">
+                <img src="images/DerechaInfra.jpg" alt="Infraestructura Cercano">
+                <p>Esta es la perspectiva desde la parte derecha (Right)</p>
+            </div>
+           <!-- <div class="carousel-item">
+                <img src="images/infraestructura_medio.jpg" alt="Infraestructura Medio">
+                <p>Profundidad: Media</p>
+            </div> -->
+        </div>
+        <button class="carousel-btn prev">&lt;</button>
+        <button class="carousel-btn next">&gt;</button>
+    </div>
+
+    <!-- Sección de Objeto -->
+    <div class="carousel-container" id="objeto" style="display: none;">
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="images/IzquierdaObj.jpg" alt="Objeto Lejano">
+                <p>Esta es la perspectiva desde la parte izquierda (Left)</p>
+            </div>
+            <div class="carousel-item">
+                <img src="images/DerechaObj.jpg" alt="Objeto Cercano">
+                <p>Esta es la perspectiva desde la parte derecha (Right)</p>
+            </div>
+          <!--  <div class="carousel-item">
+                <img src="images/objeto_medio.jpg" alt="Objeto Medio">
+                <p>Profundidad: Media</p>
+            </div> -->
+        </div>
+        <button class="carousel-btn prev">&lt;</button>
+        <button class="carousel-btn next">&gt;</button>
+    </div>
+
+    <footer class="blurred-footer">
+        <p>&copy; Todos los derechos reservados. Autor: Guillermo Martinez
+            <br> @2024 Visión Estereoscópica.</br>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
